@@ -15,6 +15,13 @@ providers:
       thinking:
         type: 'disabled'
         # budget_tokens: 16000
+  - id: anthropic:messages:claude-sonnet-4-5-20250929
+    config:
+      max_tokens: 20000
+      temperature: 1
+      thinking:
+        type: 'enabled'
+        budget_tokens: 16000
   # - id: anthropic:messages:claude-haiku-4-5-20251001
   #   config:
   #     max_tokens: 20000
@@ -34,7 +41,7 @@ evaluateOptions:
 tests:
   - description: 'Test if output is equal to the expected value'
     vars:
-      image_url: file://image/piping-red-full-1268x951-600.png
+      image_url: file://image/piping-red-full-896x1344.png
     assert:
       # Test verifies pixel distance value against expected
       - type: python
