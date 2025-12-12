@@ -41,13 +41,20 @@ This PNG is 1344 x 896 pixels.
 
 ## Measurement Process
 1. Locate the red rectangle
-2. Identify the point y coordinates of the starting edge of rectangle and the point coordinate of the ending edge of the rectangle
+2. Identify the point coordinates of the starting edge of rectangle and the point coordinates of the ending edge of the rectangle
 3. Measure its pixel length
 4. Multipy the pixel length values by (36 inches / 1344 pixels)
 5. Multiply by 8 (1/8 inches = 1 foot) for the feet value
 6. Express results in feet and inches (round to nearest inch)
 
 Show your work for each step.
+
+Include a JSON object in the response that contains:
+   - "pixel_length": the length in pixels
+   - "start_coordinates": the [x, y] coordinates of the starting edge
+   - "end_coordinates": the [x, y] coordinates of the ending edge
+   - "feet": the feet portion of the measurement
+   - "inches": the inches portion of the measurement (rounded to nearest inch)
 """
 
 
@@ -79,16 +86,16 @@ def format_image_prompt(context: PromptFunctionContext) -> list[dict[str, typing
                 "role": "user",
                 "content": [
                     {
+                        "type": "text",
+                        "text": user_prompt
+                    },
+                    {
                         "type": "image",
                         "source": {
                             "type": "base64",
                             "media_type": media_type,
                             "data": image_data,
                         },
-                    },
-                    {
-                        "type": "text",
-                        "text": user_prompt
                     }
                 ],
             },
