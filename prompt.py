@@ -29,7 +29,7 @@ def get_image_base64(image_url: str) -> tuple[str, str]:
         tuple[str, str]: The base64-encoded image data and media type.
     """
     with urlopen(image_url) as response:
-        media_type = response.headers.get("Content-Type", "image/jpeg").split(";")[0]
+        media_type = response.headers.get("Content-Type", "image/png").split(";")[0]
         return base64.b64encode(response.read()).decode("utf-8"), media_type
 
 
