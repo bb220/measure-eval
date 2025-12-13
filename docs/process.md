@@ -41,7 +41,7 @@ Convert the PDF to an LLM-API optimized image file with maximum resolution while
 
 **Output:** Optimized PNG file ready for API processing
 
-![Optimized Piping Drawing](../image/piping-red-full-1268x951-600.png)
+![Optimized Piping Drawing](../image/piping-red-full-896x1344.png)
 
 ---
 
