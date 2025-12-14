@@ -5,9 +5,7 @@
 This project evaluates the performance of various Large Language Models (LLMs) in performing precise image measurement tasks on technical drawings. Specifically, it tests the models' ability to measure dimensions from piping drawings by identifying pixel coordinates, performing scale conversions, and calculating real-world measurements.
 
 **What it tests:**
-- TODO: Accuracy in identifying pixel coordinates from images
-- TODO: Correct application of scale conversions (pixels → drawing inches → real-world dimensions)
-- TODO: Step-by-step reasoning and calculation accuracy
+- Accuracy in locating pixel coordinates from images (compares LLM output to actual values)
 
 **Evaluation Method:**
 The system uses [Promptfoo](https://www.promptfoo.dev/) to run automated evaluations across multiple AI providers, comparing their outputs against known actual values with a defined tolerance threshold.
