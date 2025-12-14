@@ -78,7 +78,7 @@ measure-eval/
 ├── docs/
 │   └── process.md           # Detailed measurement process documentation
 ├── image/
-│   └── piping-red-full-1268x951-600.png  # Test image
+│   └── piping-red-full-896x1344.png  # Test image
 └── pdf/
     └── piping-red-full.pdf  # Original PDF drawing
 ```
