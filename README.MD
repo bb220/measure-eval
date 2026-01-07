@@ -119,7 +119,7 @@ This opens a web interface where you can:
 
 ## Understanding the Measurement Process
 
-The evaluation tests the LLM's ability to execute a 6-step measurement process.
+The evaluation tests the VLM's ability to execute critical steps in the measurement process.
 
 For the complete process with detailed examples, see [docs/process.md](docs/process.md).
 
