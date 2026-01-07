@@ -1,11 +1,11 @@
-# LLM Image Measurement Evaluation
+# VLM Image Measurement Evaluation
 
 ## Overview
 
-This project evaluates the performance of various Large Language Models (LLMs) in performing precise image measurement tasks on technical drawings. Specifically, it tests the models' ability to measure dimensions from piping drawings by identifying pixel coordinates, performing scale conversions, and calculating real-world measurements.
+This project evaluates the performance of various Vision Language Models (VLMs) in performing precise image measurement tasks on technical drawings. Specifically, it tests the models' ability to measure dimensions from piping drawings by identifying pixel coordinates, performing scale conversions, and calculating real-world measurements.
 
 **What it tests:**
-- Accuracy in locating pixel coordinates from images (compares LLM output to actual values)
+- Accuracy in identifying two pixel coordinates in an image and calcuating the distance between them (compares VLM output to actual values)
 
 **Evaluation Method:**
 The system uses [Promptfoo](https://www.promptfoo.dev/) to run automated evaluations across multiple AI providers, comparing their outputs against known actual values with a defined tolerance threshold.
