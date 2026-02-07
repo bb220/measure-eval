@@ -132,3 +132,6 @@ For the complete process with detailed examples, see [docs/process.md](docs/proc
 - Implement comprehensive accuracy metrics
 - Add additional test images with varying complexity
 
+---
+
+🏄 [brandonbellero](https://www.brandonbellero.com)
